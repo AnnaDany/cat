@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'CHAOS16';
+    src: url('fonts/CHAOS16.woff') format('woff');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul, ol {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.warning {
+    font-family: 'CHAOS16';
+    font-size: 30px;
+    text-align: center;
+}
+
+.items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+.item {
+        position: relative;
+        width: 736px;
+        margin: 0 auto;    
+    }
+
+.overlay {
+        opacity: 0;
+        border: 3px solid #FFF;
+        border-radius: 15px;
+        padding: 10px 99px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    .fish   {
+        position: absolute;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .fish-time {
+        opacity: 1;
+        transform: rotateY(360deg);
+    }
+
+.item:hover .overlay {
+    opacity: 100%;
+}
+
+.overlay:hover {
+    background: #6ed477;
+    border: 3px solid green;
+    border-radius: 15px;
+    font-family: 'CHAOS16', serif;
+    font-size: 20px;
+}
